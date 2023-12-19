@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1 class = "title"> Tip Calculator </h1>
+    <p class = "sub-title"> Enter the bill amount and tip percentage to calculate the total. </p>
+
+    <form action="">
+      <div class="form-item">
+        <label for="title"> Bill amount: </label>
+        <input type="number" class="amount">
+      </div>
+
+      <div class="form-item">
+        <label for="title"> Tip percentage: </label>
+        <input type="number" class="tip">
+      </div>
+
+      <button type="submit"> Calculate </button>
+    </form>
+
+    <h2 class="total"> Total: <span class="total-amount"></span> </h2>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
