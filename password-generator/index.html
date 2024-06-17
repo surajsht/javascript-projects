@@ -6,6 +6,26 @@
     <title>Password Generator</title>
   </head>
   <body>
+    <form class="password-length">
+      <div class="form-item">
+        <label for="title"> Adjust password length </label>
+        <input type="range" min="1" max="100" value="8" />
+        <span class="range-value">8</span>
+      </div>
+
+      <div class="form-item">
+        <label for="title">Add numbers </label>
+        <input type="checkbox" class="password-number" />
+      </div>
+
+      <div class="form-item">
+        <label for="title">Add symbols </label>
+        <input type="checkbox" class="password-symbol" />
+      </div>
+      <button type="submit">Generate</button>
+    </form>
+
+    <h2 class="password">Your new password is: <span></span></h2>
     <script src="script.js"></script>
   </body>
 </html>
